@@ -1,0 +1,119 @@
+:root {
+    --first-color: #105a53 ;
+    --second-color:#512E5F;
+}
+body {
+    width: 100%;
+    background: linear-gradient(to right, black, var(--second-color) );
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+.form {
+    border: 1px solid rgb(135, 135, 135);
+    width: 25%;
+    background: linear-gradient(to bottom right, var(--first-color), var(--second-color));
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: auto;
+    margin-top: 10%;
+    background-size: cover;
+}
+form ::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    background-color: var(--first-color);
+    z-index: -1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+form ::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    background-color: var(--second-color);
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0px;
+}
+.hr {
+    width: 70px;
+    height: 5px;
+    background:linear-gradient(to left,  var(--first-color), var(--second-color));
+    border: 0px;
+    margin-bottom: 20px;
+}
+label, input, a {
+    display: block;
+    margin-left: 20px;
+}
+label {
+    color: white;
+    font-variant: small-caps;
+    margin-left: 19PX;
+    margin-bottom: 10px;
+}
+input {
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 0px;
+    background-color: rgba(209, 207, 207,0.3);
+    padding-left: 15px;
+}
+input::placeholder {
+    color: rgba(70, 69, 69, 0.8);
+}
+a {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    color:#290c36 ;
+    font-size: larger;
+}
+button {
+    margin: 10px 0px 40px 20px;
+    width: 90%;
+    padding: 12px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 0px;
+    background-color: rgba(209, 207, 207,0.3);
+    color: white;
+    font-weight: bold;
+}
+button:hover {
+    background-color: var(--second-color);
+}
